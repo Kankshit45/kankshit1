@@ -1,0 +1,82 @@
+#include <stdio.h>
+
+int main()
+{
+    float celsius, fahrenheit;
+
+
+    printf("Enter temperature in Fahrenheit: ");
+    scanf("%f", &fahrenheit);
+
+
+    celsius = (fahrenheit - 32) * 5 / 9;
+
+
+    printf("%.2f Fahrenheit = %.2f Celsius", fahrenheit, celsius);
+
+    return 0;
+
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+	float x1, y1, x2, y2, gdistance;
+	printf("Input x1: ");
+	scanf("%f", &x1);
+	printf("Input y1: ");
+	scanf("%f", &y1);
+              printf("Input x2: ");
+	scanf("%f", &x2);
+	printf("Input y2: ");
+	scanf("%f", &y2);
+	gdistance = ((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1));
+	printf("Distance between the said points: %.4f", sqrt(gdistance));
+	printf("\n");
+	return 0;
+}
+
+
+
+
+
+#include <stdio.h>
+
+
+
+int main(void)
+
+{
+    int num1,num2;
+    printf("Enter two numbers:");
+	scanf("%d %d",&num1,&num2);
+
+
+	if(num1>num2)
+
+
+	{
+     printf("%d is greatest",num1);
+}
+     else if(num2>num1)
+
+
+	{
+    printf("%d is greatest",num2);
+}
+
+
+	else
+
+
+	{
+     printf("%d and %d are equal",num1,num2);
+}
+
+
+	return 0;
+
+
+}
+
